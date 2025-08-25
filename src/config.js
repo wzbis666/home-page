@@ -4,7 +4,7 @@ const config = {
 		title: 'LeoZi的个人主页🎉',
 		description: '欢迎来到LeoZi的奇妙世界！',
 		keywords: 'LeoZi,LeoZi,个人主页,个人网站',
-		icon: '/favicon.ico'   //网页图标，支持外链
+		icon: "/img/avatar1.jpg"   //网页图标，支持外链
 	},
 
 	avatar: "/img/avatar1.jpg", // 头像
