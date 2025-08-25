@@ -73,6 +73,7 @@ const config = {
 		"一星陨落，黯淡不了星空灿烂;一花凋零，荒芜不了整个春天。",
 		"观我旧往，同我仰春。知我晦暗，许我春朝。",
 		"过我嶙峋，拥我九春。视我斑驳，享我清秋。",
+		],
 
 	//音乐播放配置，采用MetingJS Api(https://github.com/metowolf/MetingJS)
 	musicPlayer: {
