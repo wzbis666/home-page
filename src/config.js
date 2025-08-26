@@ -12,10 +12,21 @@ const config = {
 
 	// 颜色配置
 	color: {
-		themecolor: "#FFFFFF", // 主题颜色，推荐趋于亮白可带有轻微色调，例： #D1FFEC
-		welcometitlecolor: "#FFFFFF", // 标题颜色 例： #7BFFC9
-		turntablecolor1: "#FFFF00",  // 转盘渐变色一
-		turntablecolor2: "#00FFFF"   // 转盘渐变色二
+		// 主色调（示例清新蓝）
+  primary: "#B2E0FF",  
+  // 衍生浅高光
+  primaryLight: "#D9F2FF",  
+  // 衍生强调色
+  primaryDark: "#80BFFF",  
+
+  themecolor: "#D9F2FF", // 替换原主题色
+  welcometitlecolor: "#B2E0FF", // 标题色用主色
+  // 转盘渐变改用同色系
+  turntablecolor1: "#B2E0FF",  
+  turntablecolor2: "#80BFFF",  
+
+  // 新增强调色（按钮hover等场景用）
+  accentColor: "#FFD700",  
 	},
 
 	brightness: 85, // 背景亮度 --%
