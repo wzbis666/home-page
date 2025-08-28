@@ -161,9 +161,9 @@ const config = {
       img: "/img/1.png", 
       imgAlt: "故余虽愚，卒获有所闻", // 新增图片alt文本，提升无障碍
       title: "流光溢彩", 
-      subtitle: "个人作品展示平台", // 优化副标题，明确项目定位
+      subtitle: "故余虽愚，卒获有所闻", // 优化副标题，明确项目定位
       text: "基于Vue.js开发的响应式作品展示平台，支持作品分类、搜索与详情查看，集成了毛玻璃效果与动态过渡动画，适配PC/移动端。", // 补充项目详情，传递技术栈与功能
-      url: "https://47.99.59.248", 
+      url: "http://47.99.59.248/", 
       fallbackUrl: "https://leleo.top/projects/gallery", // 新增备用链接，避免主链接失效
       tags: ["Vue.js", "响应式设计", "动画效果"], // 新增项目标签，快速识别技术栈
       show: false 
