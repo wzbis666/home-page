@@ -175,7 +175,7 @@ const config = {
       title: "金银岛", 
       subtitle: "技术博客系统", 
       text: "基于React+Node.js开发的个人博客，支持Markdown编辑、文章分类、评论互动与访问统计，后端使用MySQL存储数据，部署于Vercel。",
-      url: "https://leleo.top", 
+      url: "http://47.99.59.248/", 
       fallbackUrl: "https://leleo.top/blog",
       tags: ["React", "Node.js", "MySQL", "Markdown"],
       show: false 
