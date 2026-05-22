@@ -1,4 +1,4 @@
-# leleo-home-page 个人主页
+# leozi-home-page 个人主页
 
 ## 目录
 - [项目简介](#项目简介)
@@ -54,7 +54,7 @@ git clone https://github.com/wzbis666/www.git
 2. 进入项目目录：
 
 ```bash
-cd leleo-home-page
+cd www
 ```
 
 3. 安装依赖：
