@@ -199,7 +199,7 @@ const config = {
       title: "光影空间", 
       subtitle: "CSS动画展示库", 
       text: "收集并展示个人开发的CSS动画效果（如3D旋转、渐变过渡、交互反馈），提供代码示例与在线编辑功能，帮助初学者学习CSS动画。",
-      url: "https://wenzhibin.top", 
+      url: "https://wenzhibin.top/", 
       fallbackUrl: "https://wenzhibin.top/",
       tags: ["CSS3", "动画", "前端教学"],
       show: false 
