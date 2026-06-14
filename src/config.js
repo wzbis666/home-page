@@ -64,7 +64,7 @@ const config = {
 
 	//社交按钮
 	socialPlatformIcons: [
-		{ icon: "mdi-github", link: "https://www.github.com/leleo886" },
+		{ icon: "mdi-github", link: "https://github.com/wzbis666" },
 		{ icon: "mdi-email", link: "mailto:leleo886@foxmail.com" },
 		{ icon: "mdi-qqchat", link: "https://im.qq.com/" },
 		{ icon: "mdi-wechat", link: "https://wx.qq.com/" },
@@ -176,7 +176,7 @@ const config = {
       subtitle: "技术博客系统", 
       text: "基于React+Node.js开发的个人博客，支持Markdown编辑、文章分类、评论互动与访问统计，后端使用MySQL存储数据，部署于Vercel。",
       url: "http://47.99.59.248/", 
-      fallbackUrl: "https://leleo.top/blog",
+      fallbackUrl: "https://wenzhibin.top/",
       tags: ["React", "Node.js", "MySQL", "Markdown"],
       show: false 
     },
@@ -188,7 +188,7 @@ const config = {
       subtitle: "生活相册应用", 
       text: "基于Vue3+Pinia开发的相册应用，支持图片上传、分类管理、预览与分享，使用localStorage存储本地数据，适配移动端触摸操作。",
       url: "https://leleo.top", 
-      fallbackUrl: "https://leleo.top/album",
+      fallbackUrl: "https://wenzhibin.top/",
       tags: ["Vue3", "Pinia", "移动端适配"],
       show: false 
     },
@@ -200,7 +200,7 @@ const config = {
       subtitle: "CSS动画展示库", 
       text: "收集并展示个人开发的CSS动画效果（如3D旋转、渐变过渡、交互反馈），提供代码示例与在线编辑功能，帮助初学者学习CSS动画。",
       url: "https://leleo.top", 
-      fallbackUrl: "https://leleo.top/animations",
+      fallbackUrl: "https://wenzhibin.top/",
       tags: ["CSS3", "动画", "前端教学"],
       show: false 
     },
@@ -212,7 +212,7 @@ const config = {
       subtitle: "实用小工具集合", 
       text: "包含JSON格式化、时间转换、颜色拾取、密码生成等实用工具，基于Vanilla JS开发，轻量无依赖，支持离线使用。",
       url: "https://leleo.top", 
-      fallbackUrl: "https://leleo.top/tools",
+      fallbackUrl: "https://wenzhibin.top/",
       tags: ["Vanilla JS", "实用工具", "离线应用"],
       show: false 
     },
@@ -224,7 +224,7 @@ const config = {
       subtitle: "前端配色工具", 
       text: "基于Chrome色彩理论开发的配色工具，支持主色提取、色板生成与对比度检测，可直接复制CSS色值，适配前端开发场景。",
       url: "https://leleo.top", 
-      fallbackUrl: "https://leleo.top/color-picker",
+      fallbackUrl: "https://wenzhibin.top/",
       tags: ["CSS", "色彩理论", "开发工具"],
       show: false 
     },
@@ -236,7 +236,7 @@ const config = {
       subtitle: "交互式简历展示", 
       text: "基于React开发的响应式简历，包含个人信息、技能栈、项目经验与联系方式，支持PDF导出功能，适配PC/移动端查看。",
       url: "https://leleo.top", 
-      fallbackUrl: "https://leleo.top/resume",
+      fallbackUrl: "https://wenzhibin.top/",
       tags: ["React", "PDF导出", "个人品牌"],
       show: false 
     },
@@ -248,7 +248,7 @@ const config = {
       subtitle: "接口调试小助手", 
       text: "基于Axios开发的轻量API测试工具，支持GET/POST请求、参数配置与响应格式化，适用于前端开发时快速调试接口。",
       url: "https://leleo.top", 
-      fallbackUrl: "https://leleo.top/api-tester",
+      fallbackUrl: "https://wenzhibin.top/",
       tags: ["Axios", "API调试", "前端开发"],
       show: false 
     },
