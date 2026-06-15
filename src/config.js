@@ -163,7 +163,7 @@ const config = {
       title: "MC反作弊", 
       subtitle: "作弊的让你飞起来", // 优化副标题，明确项目定位
       text: "本人呕心沥血的集大成之作,自研的反作弊引擎让作弊行为无所遁形,进了我的服务器就给我老实点", // 补充项目详情，传递技术栈与功能
-      url: "http://47.99.59.248/", 
+      url: "https://github.com/wzbis666/MCACS-V2.0", 
       fallbackUrl: "https://leleo.top/projects/gallery", // 新增备用链接，避免主链接失效
       tags: ["Vue.js", "响应式设计", "动画效果"], // 新增项目标签，快速识别技术栈
       show: false 
