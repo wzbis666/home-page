@@ -174,7 +174,7 @@ const config = {
       imgAlt: "金银岛项目截图",
       title: "金银岛", 
       subtitle: "技术博客系统", 
-      text: "基于React+Node.js开发的个人博客，支持Markdown编辑、文章分类、评论互动与访问统计，后端使用MySQL存储数据，部署于Vercel。",
+      text: "wordpress+argon主题快速搭建的技术博客系统,用于发表一些感悟心得和技术文章",
       url: "http://47.99.59.248/", 
       fallbackUrl: "https://wenzhibin.top/",
       tags: ["React", "Node.js", "MySQL", "Markdown"],
