@@ -31,14 +31,15 @@ onMounted(() => {
 <style scoped>
 .msg, .qm{
     color: var(--leleo-vcard-color);
-    letter-spacing: 2px;
-    font-family: Arial, sans-serif;
+    letter-spacing: 0;
+    font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans SC", sans-serif;
     font-size: 25px;
-    font-weight: bold;
+    font-weight: 800;
+    line-height: 1.65;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
  
-.msg ::v-deep.cursorChar {
+.msg :deep(.cursorChar) {
     display: inline-block;
     margin-left: 2px;
 }
