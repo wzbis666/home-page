@@ -1,5 +1,5 @@
 <template>
-  <canvas ref="polarCanvas"></canvas>
+  <canvas id="polarChart"></canvas>
 </template>
 
 <script>
@@ -15,7 +15,6 @@ export default {
       configdata:config,
       skills: null,
       skillPoints: null,
-      chart: null,
     };
   },
   mounted() {
@@ -28,22 +27,19 @@ export default {
   },
   methods: {
     generateColors(count) {
-      const palette = [
-        'rgba(178, 224, 255, 0.72)',
-        'rgba(128, 191, 255, 0.70)',
-        'rgba(255, 215, 0, 0.62)',
-        'rgba(122, 232, 199, 0.62)',
-        'rgba(255, 164, 124, 0.62)',
-        'rgba(194, 181, 255, 0.62)',
-        'rgba(255, 132, 173, 0.60)',
-        'rgba(144, 238, 144, 0.58)',
-      ];
-      return Array.from({ length: count }, (_, index) => palette[index % palette.length]);
+      const colors = [];
+      for (let i = 0; i < count; i++) {
+        const r = Math.floor(Math.random() * 255);
+        const g = Math.floor(Math.random() * 255);
+        const b = Math.floor(Math.random() * 255);
+        colors.push(`rgba(${r}, ${g}, ${b}, 0.6)`);
+      }
+      return colors;
     },
     renderChart() {
-      const ctx = this.$refs.polarCanvas.getContext('2d');
+      const ctx = document.getElementById('polarChart').getContext('2d');
       const colors = this.generateColors(this.skills.length);
-      this.chart = new Chart(ctx, {
+      new Chart(ctx, {
         type: 'polarArea',
         data: {
           labels: this.skills,
@@ -51,7 +47,7 @@ export default {
             label: '技能点',
             data: this.skillPoints,
             backgroundColor: colors,
-            borderColor: colors.map(color => color.replace(/0\.\d+\)/, '1)')),
+            borderColor: colors.map(color => color.replace('0.6', '1')),
             borderWidth: 2,
           }],
         },
@@ -93,11 +89,11 @@ export default {
                 display: false,
               },
               grid: {
-                color: 'rgba(255, 255, 255, 0.14)',
+                color: 'rgba(0, 0, 0, 0.1)',
                 lineWidth: 0.5,
               },
               angleLines: {
-                color: 'rgba(255, 255, 255, 0.22)',
+                color: 'rgba(0, 0, 0, 0.2)',
                 lineWidth: 1,
               },
             },
@@ -111,11 +107,6 @@ export default {
         },
       });
     },
-  },
-  beforeUnmount() {
-    if (this.chart) {
-      this.chart.destroy();
-    }
   },
 };
 </script>

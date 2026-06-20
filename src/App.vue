@@ -23,8 +23,8 @@
       ></v-switch>
     </div>
     
-    <div class="leleo-content" v-show="!isloading && !isClearScreen" :style="xs||sm?{'overflow-y': 'auto','overflow-x': 'hidden'}:{}">
-        <v-row class="leleo-layout">
+    <div v-show="!isloading && !isClearScreen" :style="xs||sm?{'overflow-y': 'auto','overflow-x': 'hidden'}:{}">
+        <v-row>
             <v-col cols="12" md="4" lg="3" class="leleo-left" align="center">
               <div :style="xs||sm?{'font-size':'2.3rem'}:{'display':'none'}" class="leleo-left-welcome">{{ configdata.welcometitle }}</div>  
               <v-avatar class="leleo-left-avatar" :size="xs||sm?120:140" :style="xs||sm?{'margin-top': '0'}:{'margin-top': '2rem'}" @mouseenter="musicplayershow(1)" @mouseleave="musicplayershow(0)">
@@ -61,7 +61,7 @@
                   </transition>
                 </v-avatar>
 
-                <v-card class="ma-5 pa-2 leleo-left-card profile-tags-card" variant="tonal" :max-width="xs?270:300" style="text-align: center;">
+                <v-card class="ma-5 pa-2 leleo-left-card" variant="tonal" :max-width="xs?270:300" style="text-align: center;">
                     <template v-slot:title>
                     <span>Tags</span>
                     </template>
@@ -70,11 +70,11 @@
                     </v-chip>
                 </v-card>
 
-                <div class="leleo-left-chart profile-chart">
+                <div class="leleo-left-chart">
                     <polarchart :style="xs||sm?{'height':'210px'}:{'height':'270px'}"/>
                 </div>
 
-                <v-container class="leleo-left-socialIconsContainer profile-actions">
+                <v-container class="leleo-left-socialIconsContainer">
                     <v-row align="center" justify="center">
                     <v-col class="pa-1" cols="auto" v-for="item in socialPlatformIcons">
                         <v-btn :size="xs?25:33" variant="tonal" color="var(--leleo-vcard-color)"
@@ -108,7 +108,7 @@
                 </v-container>
             </v-col>
 
-            <v-col cols="12" md="8" lg="9" class="leleo-right" :style="xs||sm ?{}:{'overflow': 'auto'}">
+            <v-col cols="12" md="8" lg="9" style="height: 100vh;" :style="xs||sm ?{}:{'overflow': 'auto'}">
                 <homeright :configdata=configdata :formattedTime=formattedTime 
                 :formattedDate=formattedDate :projectcards=projectcards></homeright>
             </v-col>
